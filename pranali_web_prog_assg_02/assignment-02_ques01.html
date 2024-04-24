@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 02</title>
+    <style>
+        div{
+            margin: 5px;
+            padding: 5px;
+        }
+
+        but{
+           border-radius: 10%;
+           
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Appointment Scheduler</h1>
+    <form method="post" action="#">
+        <fieldset>
+            <legend>Personal Information</legend>
+           <div>
+            <label>Name</label><br>
+            <input type="text">
+           </div>
+
+           <div>
+            <label>Telephone number</label><br>
+            <input type="tel" pattern="^[0-9]*$">
+           </div>
+
+           <div>
+            <label>E-mail address</label><br>
+            <input type="email" >
+           </div>
+
+           <div>
+            <label>Date of birth</label><br>
+            <input type="date">
+           </div>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Appointment Request</legend>
+            <div>
+                <label>What is the reason for your visit?</label><br>
+                <input type="text" placeholder="Select or type your reason">
+            </div>
+
+            <div>
+                <label>Current pain level</label><br>
+                <input type="range">
+            </div>
+
+            <div>
+                <label>Preferred date</label><br>
+                <input type="date">
+            </div>
+
+            <div>
+                <label>Preferred time</label><br>
+                <input type="time">
+            </div>
+        </fieldset>
+
+        <div>
+            <input type="submit" id="but">
+        </div>
+    </form>
+</body>
+</html>
