@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*class Day{
+            constructor(year,day,month){
+                this.year = year;
+                this.day = day;
+                this.month = month;
+            }
+
+            displayDay(){
+                var d1 = new Date();
+                console.log(this.get)
+            }
+        }*/
+
+        function getWeekDay(d1){
+            var arr = ['Su','Mo','Tu','We','Th','Fr','Sa']
+            return arr[d1.getDay()]
+        }
+
+        
+        var today = new Date()
+
+        console.log(getWeekDay(today))
+
+        document.write(getWeekDay(today))
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arr = [1,2,3,4,5,8,15,63,95]
+        n = arr.length
+        sum = 0
+        count = 0
+
+        for(i=0; i<n; i++){
+            sum += arr[i]
+        }
+
+       // document.write(sum)
+
+        var avg = sum/n
+
+        document.write("The average is:",sum,"<br>")
+
+        for(i=0; i<n; i++){
+            if(i>avg){
+                count++
+            }
+        }
+
+       
+
+        document.write("The count is:",count + "<br>")
+
+        document.write(count ," are grater than average")
+    </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        num1 = parseInt(prompt("Enter a number"))
+        document.write("Number1: ",num1,"<br>")
+        num2 = parseInt(prompt("Enter a number: "))
+        document.write("Number1: ",num2,"<br>")
+        op = prompt("Enter an operator: ")
+        document.write("Operater is:",op,"<br>")
+
+        /*if(op == "+"){
+            document.write("Addition is :",(num1 + num2))
+        }
+        else if(op == "-"){
+            document.write("Subtraction is :",(num1 - num2))
+        }
+        else if(op == "*"){
+            document.write("Multiplication is :",(num1 * num2))
+        }
+        else if( op == "/"){
+            document.write("Division is :",(num1 / num2))
+        }else{
+            document.write("Invalid")
+        }*/
+
+        switch(op){
+            case "+":
+                document.write("Addition is :",(num1 + num2))
+                break
+
+            case "-":
+                document.write("Subtraction is :",(num1 - num2))
+                break
+
+
+            case "*":
+                document.write("Multiplication is :",(num1 * num2))
+                break
+
+            case "/":
+                document.write("Division is :",(num1 / num2))
+                break
+
+            default:
+                document.write("Invalid")
+        }
+    </script>
+</body>
+</html>

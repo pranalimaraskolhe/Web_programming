@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+       /* function f1(){
+           alert(document.getElementById("p1").innerHTML)
+        }*/
+        function f1(){
+           var plist = document.getElementsByTagName("p")
+
+           /*for(i=0; i<plist.length; i++){
+            console.log(plist[i].innerHTML)
+           }*/
+
+          /* for(i=0; i<plist.length; i++){
+                plist[i].style.color = "blue"
+                plist[i].style.fontFamily = "Arial"
+                plist[i].style.fontSize = "40px"
+           }*/
+
+           for(i=0; i<plist.length; i++){
+                plist[i].innerHTML = "New Content"
+           }
+        }
+
+        /*function f2(){
+            document.getElementById("h3").style.color = "red"
+        }*/
+
+        function f3(){
+            document.getElementById("h1").style.color = "red"
+            documnet.getElementById("h1").style.fontFamily = "Arial"
+            document.getElementById("h1").style.fontSize = "40px"
+        }
+
+        function f4(){
+            document.getElementById("h1").style.color = "black"
+            documnet.getElementById("h1").style.fontFamily = "Times New Roman"
+            dcoument.getElementById("h1").style.fontSize = "20px"
+        }
+    </script>
+</head>
+<body>
+    <!-- <h1>Welcome to javascript</h1>
+    <p id="p1">This is para-1</p>
+    <p>This is para-2</p>
+    <h3>This is a header-3</h3>
+    <p>This is para-3</p>
+    <button onclick="f1()">Click Here</button> -->
+
+    <h1 id="h1" onmouseover="f3()" onmouseout="f4()">Welcome to javascript</h1>
+    <p>This is para-1</p>
+    <p>This is para-2</p>
+    <h3 id="h3" onclick="f2()">This is a header-3</h3>
+    <p>This is para-3</p>
+    <button onclick="f1()">Click Here</button>
+</body>
+</html>

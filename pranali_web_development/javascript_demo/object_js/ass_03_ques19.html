@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Emp{
+            constructor(empid,empname,salary){
+                this.empid = empid;
+                this.empname = empname;
+                this.salary = salary;
+            }
+
+        }
+        
+
+        var display_arr = [
+                new Emp(101,"Pranali",30000),
+                new Emp(102,"Harsha",30000),
+                new Emp(103,"Ash",45000),
+                new Emp(104,"Sejal",61000)
+        ]
+
+    var str = "<table border ='1'>"
+
+        str += "<tr><th>Id</th><th>Name</th><th>Salary</th></td>"
+
+            for(i of display_arr){
+                str += "<tr><td>"+ i.empid + "</td><td>" + i.empname+ "</td><td>" + i.salary + "</td></tr>" 
+            }
+
+        str += "</table>"
+
+        document.write(str)
+    </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function table(){
+            var num1 = document.getElementById("num1").value
+            var num2 = document.getElementById("num2").value
+            var num3 = document.getElementById("num3").value
+            var str = ''
+
+            for(i=num1; i<=num2; i++){
+                ans = i*num3
+
+                str += i + "times" + num3 + "=" + ans + "\n"
+                document.getElementById("mul").value = str
+            }
+
+         
+
+
+        }
+    </script>
+
+</head>
+<body>
+    <form action="">
+        <div align="center">
+            Start Number:
+            <input type="number" id="num1" value="1">
+            End Number:
+            <input type="number" id="num2" value="10">
+            Multiply By:
+            <input type="number" id="num3" value="2">
+        </div><br>
+
+        <div align="center"><button type="button" onclick="table()">Times Table</button></div><br>
+        <div align="center"><button type="reset">Rest</button></div><br>
+
+        <div align="center">
+            <textarea  id="mul" cols="30" rows="10"></textarea>
+        </div>
+</form>
+</body>
+</html>

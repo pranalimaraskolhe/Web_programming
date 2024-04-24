@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function area_circumference(){
+            var num = parseInt(document.getElementById("num").value)
+            var area = 3.14*num*num
+            var cir = 2*3.14*num
+            document.getElementById("area").innerHTML = area
+            document.getElementById("cir").innerHTML = cir
+        }
+    </script>
+</head>
+<body>
+    <form action="#">
+        Enter Radius
+        <input type="number" id="num"><br>
+        <input type="button" value="display" onclick="area_circumference()">
+    </form>
+
+    Area is : <span id="area"></span><br>
+    Circumference : <span id="cir"></span>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function f1(){
+            var clist = document.getElementsByName("c1")
+
+            for(i=0; i<clist.length; i++){
+                if(clist[i].checked){
+                    console.log("Checked!", clist[i].value)
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <form action="">
+        Courses Offered:<br>
+        <input type="checkbox" value="diot" name="c1">DIoT
+        <input type="checkbox" value="dac" name="c1">DAC
+        <input type="checkbox" value="dbda" name="c1">DBDA
+        <input type="checkbox" value="ditiss" name="c1">DITISS<br>
+
+        <button type="button" onclick="f1()">Click Here</button>
+    </form>
+</body>
+</html>

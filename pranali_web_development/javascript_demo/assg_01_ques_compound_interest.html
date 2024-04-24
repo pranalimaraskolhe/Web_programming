@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function compund_intrest() {
+            principle = parseInt(prompt("Enter Principle"))
+            rate = parseInt(prompt("Enter Rate: "))
+            n = parseInt(prompt("Enter period in years: "))
+
+            compund_intrest = (principle * (1 + rate / 100) ** n) - principle
+            document.write("<p>--------------------------------------------------------------</p>")
+            document.write("<p>***********Calculate Compound Interest********</p>")
+            document.write("<p>--------------------------------------------------------------</p> <br><br><br>")
+            document.write("Principle :                " + "  -  "+ principle + "<br><br><br>")
+            document.write("Principle :                " + "  -  "+ rate + "<br><br><br>")
+            document.write("Principle :                " + "  -  "+ n + "<br><br><br>")
+            document.write("Principle :                " + "  -  "+ compund_intrest + "<br><br><br>")
+            
+        }
+    </script>
+</head>
+
+<body>
+   
+
+    <script>
+        compund_intrest()
+    </script>
+
+</body>
+
+</html>

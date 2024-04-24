@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*function f1(){
+            document.write("Hello World" + "<br>")
+        }*/
+
+        function greet(){
+            var username = document.getElementById("uname").value
+            console.log("Hello ",username)
+        }
+    </script>
+</head>
+<body>
+    <script>
+        //setTimeout(f1, 5000)
+        //setInterval(f1, 3000)
+    </script>
+
+    <form action="#">
+        Username : <input id="uname"> <br>
+        <input type="button" value="Greet User" onclick="greet()">
+    </form>
+</body>
+</html>

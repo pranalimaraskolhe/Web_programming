@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Welcome To Javascript</h1>
+
+    <script>
+        //creating user-def-obj - class
+
+        /*class greeter{
+            greet(){
+                document.write("Hello World")
+            }
+        }
+
+        var g1 = new greeter()
+        g1.greet()*/
+
+        class Emp{
+            constructor(empid,empname,sal){
+                this.empid = empid;
+                this.empname = empname;
+                this.sal = sal;
+            }
+
+            displayEmpDetails(){
+                console.log(this.empid,this.empname,this.sal);
+            }
+
+            displayIncreSal(amount){
+                this.sal += amount;
+            }
+        }
+
+        var pranali = new Emp(101,"pranali",500)
+        var harsha = new Emp(102,"harsha",500)
+        pranali.displayIncreSal(100)
+        pranali.displayEmpDetails()
+        harsha.displayEmpDetails()
+
+
+    </script>
+</body>
+</html>

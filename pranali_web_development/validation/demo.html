@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span{
+            color: red;
+        }
+    </style>
+    <script>
+        function validateUname(){
+            var name = document.getElementById("uname").value 
+            if(name.length == 0 || name.length == null || name.length == ""){
+                document.getElementById("s1").innerHTML = ("Username is Mandatory!!")
+                return false
+            }
+            else if(name.length < 5){
+                document.getElementById("s1").innerHTML = ("Username greater than 5")
+                return false
+            }
+            else{
+                return true
+            }
+
+            
+        }
+
+        function validatePassword(){
+
+            var passwd = document.getElementById("pass").value 
+            if(passwd.length == 0 || passwd.length == null || passwd.length == ""){
+                document.getElementById("s2").innerHTML = ("Password is Mandatory!!")
+                return false
+            }
+            else if(passwd.length < 8){
+                document.getElementById("s2").innerHTML = ("Password greater than 5")
+                return false
+            }
+            else{
+                return true
+            }
+
+            
+        }
+
+        function validate(){
+            if(validateUname() && validatePassword()){
+                return true
+            }
+            else{
+                return false
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1 align="center">Welcome to Javascript</h1>
+    <div align="center">
+    <form onsubmit="return validate()">
+        Username : <input id="uname"> <span id="s1"></span><br><br>
+        Password : <input type="password" id="pass"><span id="s2"></span><br><br>
+        <input type="submit" >
+    </form>
+</div>
+</body>
+</html>

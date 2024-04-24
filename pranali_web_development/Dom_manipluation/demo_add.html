@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function add(){
+            var num1 = parseInt(document.getElementById("num1").value)
+            var num2 = parseInt(document.getElementById("num2").value)
+            //console.log(num1+num2)
+            var sum = num1 + num2
+            //document.getElementById("p1").innerHTML = sum
+            document.getElementById("res").value = sum
+
+        }
+    </script>
+</head>
+<body>
+    <form action="#">
+        Number1: <input type="number" id="num1"><br>
+        Number2: <input type="number" id="num2"><br>
+        <input type="button" value="Add" onclick="add()"><br>
+        Result is: <input id="res" readonly><br>
+    </form>
+    
+</body>
+</html>

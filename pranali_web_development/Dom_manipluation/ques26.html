@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var arr = []
+        function addData(){
+           
+            var uname = document.getElementById("name1").value 
+            var pass = document.getElementById("pass").value
+            var email = document.getElementById("e").value
+
+            var obj = {
+                username : uname,
+                password : pass,
+                email1 : email,
+            }
+            
+            arr.push(obj)
+            
+            str = ""
+
+            str += "<table border='1'>"
+
+            str += "<tr><th>Username</th><th>Password</th><th>Email</th></tr>"
+
+                for(i=0; i<arr.length; i++){
+                   
+                    str += "<tr><td>" + arr[i].username + "</td><td>" + arr[i].password + "</td><td>" + arr[i].email1 + "</td><tr>"
+                }
+
+            str += "</table>"
+           
+            document.getElementById("data").innerHTML = str
+
+
+        
+
+        }
+    </script>
+</head>
+<body>
+    <h1>Registration form</h1>
+    <hr>
+    <form action="#">
+        Username:<input type="text" id="name1"><br>
+        Password:<input type="password" id="pass"><br>
+        Email:<input type="email" id="e"><br>
+        <button type="button" onclick="addData()">add</button>
+    </form>
+    <div align="center">
+        <span id="data"></span>
+    </div>
+    
+</body>
+</html>

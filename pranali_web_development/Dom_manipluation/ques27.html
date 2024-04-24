@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script>
+        function display_color(){
+            var row = document.getElementsByTagName("tr")
+            for(i=0; i<row.length; i++){
+                if(i%2 == 0){
+                    row[i].style.backgroundColor = "red"
+                }
+                else{
+                    row[i].style.backgroundColor = "pink"
+                }
+            }
+        }
+    </script> -->
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <th><b>Book Title</b></th>
+            <th><b>Author</b></th>
+            <th><b>Book Price</b></th>
+        </tr>
+
+        <tr>
+            <td><a href="#">Core Java</a></td>
+            <td>Cay hustman</td>
+            <td>400</td>
+        </tr>
+
+        <tr>
+            <td><a href="#">Beginning Java</a></td>
+            <td>ivar Hortan</td>
+            <td>600</td>
+        </tr>
+
+        <tr>
+            <td><a href="#">Learning Java</a></td>
+            <td>Kishori Shahane</td>
+            <td>400</td>
+        </tr>
+
+        <tr>
+            <td><a href="#">Java Cookbook</a></td>
+            <td>Jhon Keller</td>
+            <td>500</td>
+        </tr>
+    </table>
+
+    <!-- <button type="button" onclick="display_color()">Click Here</button> -->
+
+    <script>
+        
+            var row = document.getElementsByTagName("tr")
+            for(i=0; i<row.length; i++){
+                if(i%2 == 0){
+                    row[i].style.backgroundColor = "red"
+                }
+                else{
+                    row[i].style.backgroundColor = "pink"
+                }
+            }
+        
+    </script>
+</body>
+</html>
