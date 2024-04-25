@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .middle{
+            text-align: center;
+            font-weight: 200;
+        }
+
+        #main{
+            display: flex;
+            /*margin-left: 100px;*/
+            width: 100%;
+            
+        }
+
+        #main > div{
+            padding: 20px;
+            margin: 30px;
+            border-radius: 20px;
+            
+            width: 33%;
+
+
+        }
+
+        h3{
+            font-weight: 30px;
+        }
+
+        .box1{
+            border: 1px solid green;
+            box-shadow: 8px 8px 8px 0 green;
+            padding: 10px;
+        }
+
+        .box2{
+            border: 1px solid red;
+            box-shadow: 8px 8px 8px 0 red;  
+        }
+
+        .box3{
+            border: 1px solid blue;
+            box-shadow: 8px 8px 8px 0 blue;
+            
+        }
+
+        button{
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="middle">
+            <h1>Contact us</h1>
+        </div>
+        <hr>
+
+        <div>
+            <div class="middle">
+                <h3>Have any questions? We'd love to hear you</h3>
+            </div>
+
+            <div id="main">
+                <div class="box1">
+                    <h3>Customer Care</h3>
+
+                    <p>Our Super team is spread all over the world to give you fast response</p>
+
+                    <button type="button">Submit a Request</button><br><br>
+                    <a href="#">Frequently asked questions</a>
+                </div>
+
+
+                <div class="box2">
+                    <h3>Write to us</h3>
+                    <div>Please write to us for any query</div>
+                    <div>
+                        <button type="button">Write</button>
+                    </div>
+                </div>
+
+                <div class="box3">
+                    <h3>Sales and marketing</h3>
+                    <div>
+                        <p>Get in touch with our Sales and marketing team</p>
+                    </div>
+                    <div>
+                        <button type="button">Contact Sales</button>
+                    </div>
+                    <div>
+                        <a href="#">View Plans</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

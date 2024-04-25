@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var d1 = new Date();
+        
+        function greet(){
+
+        var weekday = ["Sunday", "Monday","Tuesday","Wednesday","Thrusday","Firday","Saturday"]
+        
+        day = weekday[d1.getDay()]
+        //document.write(day)
+
+        var months = ['January','February','March','April','May','June','July','August','September','October','November','December']
+        month = months[d1.getMonth()]
+
+        var hrs = d1.getHours()
+
+        if(hrs<12){
+            var t1 = 'Good Morning'
+        }
+        else if(hrs >=12 && 17 >= hrs){
+            var t1 = 'Good Afternoon'
+        }
+        else if(hrs >= 17 && hrs <= 24){
+            var t1 = 'Good Evening'
+        }
+
+        document.write('Today is '+ day + ',' + " " + d1.getDate() + " " + month + " " + d1.getFullYear() + "," + " " + 'and' + " " + t1 + " " + "to you")
+    }
+
+    greet()
+
+
+    </script>
+</body>
+</html>
