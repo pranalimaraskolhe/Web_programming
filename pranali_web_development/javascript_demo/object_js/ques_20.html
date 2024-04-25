@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Rect{
+            constructor(len,bre){
+                this.len = len;
+                this.breadth = bre;
+            }
+
+            display_area_rect(){
+                document.write("Area of rectangle is "+ (this.len * this.breadth) + "<br>")
+            }
+
+            displayPerimeter(){
+
+                document.write("Perimeter of rectangle is "+ (2*(this.len + this.breadth)) + "<br><br>")
+            }
+        }
+
+        var rect1 = new Rect(5,5)
+        rect1.display_area_rect()
+        rect1.displayPerimeter()
+
+        class Cir{
+            constructor(r){
+                this.radius = r;
+            }
+
+            displayAreaCircle(){
+                document.write("Area of circle is " + (Math.floor(Math.PI * this.radius * this.radius)) + "<br>")
+            }
+
+            displayPerimeterCircle(){
+                document.write("Perimeter of circle is "+ (Math.floor(2*(Math.PI * this.radius))))
+            }
+
+        }
+
+        var circle1 = new Cir(4)
+        circle1.displayAreaCircle()
+        circle1.displayPerimeterCircle()
+
+    </script>
+</body>
+</html>
